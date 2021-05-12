@@ -6,3 +6,6 @@
 [![Node CI](https://github.com/VGovorin/frontend-project-lvl1/actions/workflows/node.js.yml/badge.svg)](https://github.com/VGovorin/frontend-project-lvl1/actions)
 
 https://asciinema.org/a/rahhc18Fb2SYYtEbxpNco9Q49
+
+https://asciinema.org/a/tLXnzEmn18zQdM31VcpJl3neS
+
