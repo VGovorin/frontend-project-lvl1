@@ -16,7 +16,7 @@ const askQuestionAndGetAnswer = (userName) => {
   const correctMessage = 'Correct!';
   const result = answerOfUser === trueAnswer ? correctMessage : fatalMessage;
   return result;
-}
+};
 
 const logicOfGame = () => {
   const userName = greeting();
