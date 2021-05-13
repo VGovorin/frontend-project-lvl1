@@ -15,7 +15,7 @@ export const askQuestionAndGetAnswer = (userName, generateNumber) => {
   const trueAnswer = gcd(num1, num2);
   const answerOfUser = readlineSync.question(`Question: ${num1} ${num2}\nYour answer: `);
   const correct = 'Correct!';
-  const fatal = `'${answerOfUser}' is wrong answer ;(. Correct answer was '${trueAnswer}'.\nLet\`s try again, ${userName}!`;
+  const fatal = `'${answerOfUser}' is wrong answer ;(. Correct answer was '${trueAnswer}'.\nLet's try again, ${userName}!`;
   const result = trueAnswer === Number(answerOfUser) ? correct : fatal;
   return result;
 };

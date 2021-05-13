@@ -53,7 +53,7 @@ export const askQuestionAndGetAnswer = (userName, generateNumber) => {
   progression[indexLostElement] = '..';
   const answerOfUser = readlineSync.question(`Question: ${progression.join(' ')}\nYour answer: `);
   const correct = 'Correct!';
-  const fatal = `'${answerOfUser}' is wrong answer ;(. Correct answer was '${trueAnswer}'.\nLet\`s try again, ${userName}!`;
+  const fatal = `'${answerOfUser}' is wrong answer ;(. Correct answer was '${trueAnswer}'.\nLet's try again, ${userName}!`;
   const result = trueAnswer === Number(answerOfUser) ? correct : fatal;
   return result;
 };
