@@ -38,7 +38,7 @@ export const askQuestionAndGetAnswer = (userName, generateNumber) => {
   const realAnswer = calculate(num1, num2, operators[index]);
   const answerOfUser = readlineSync.question(`Question: ${num1} ${operators[index]} ${num2}\nYour answer: `);
   const correct = 'Correct!';
-  const fatal = `'${answerOfUser}' is wrong answer :(. Correct answer was '${realAnswer}'`;
+  const fatal = `'${answerOfUser}' is wrong answer :(. Correct answer was '${realAnswer}'.\nLet\`s try again, ${userName}!`;
   const result = realAnswer === Number(answerOfUser) ? correct : fatal;
   return result;
 };
