@@ -17,7 +17,7 @@ const isPrime = (num) => {
 export const askQuestionAndGetAnswer = (userName, generateNumber) => {
   const num = generateNumber();
   const trueAnswer = isPrime(num) ? 'yes' : 'no';
-  const answerOfUser = readlineSync.question(`Question ${num}\nYour answer: `);
+  const answerOfUser = readlineSync.question(`Question: ${num}\nYour answer: `);
   const correct = 'Correct!';
   const fatal = `'${answerOfUser}' is wrong answer :(. Correct answer was '${trueAnswer}'.\nLet's try again, ${userName}!`;
   const result = trueAnswer === answerOfUser ? correct : fatal;
