@@ -1,4 +1,3 @@
-import readlineSync from 'readline-sync';
 import meetWithUser from './cli.js';
 
 export const generateNumber = () => {
@@ -10,7 +9,6 @@ export const generateNumber = () => {
 
 export const logicOfGame = (askQuestionAndGetAnswer, greetingToGame) => {
   const userName = meetWithUser();
-  //const greetingToEvenGames = 'Answer "yes" if the number is even, otherwise answer "no".';
   console.log(greetingToGame);
   for (let i = 1; i <= 3; i += 1) {
     const result = askQuestionAndGetAnswer(userName, generateNumber);
@@ -22,4 +20,3 @@ export const logicOfGame = (askQuestionAndGetAnswer, greetingToGame) => {
   }
   console.log(`Congratulations, ${userName}!`);
 };
-
